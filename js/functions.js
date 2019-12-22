@@ -33,6 +33,11 @@ $(function() {
     Math.max(($window.width() - $("#content").width()) / 2, 10)
   );
 
+  $("#naruto-wrapper").css(
+    "margin-left",
+    Math.max(($window.width() - $("#content").width()) / 2, 10)
+  );
+
   // renderLoop
   setInterval(function() {
     garden.render();
