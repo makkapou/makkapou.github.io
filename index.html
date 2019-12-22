@@ -46,28 +46,28 @@
     <div id="mainDiv">
         <div id="content">
             <div id="code">
-                <span class="comments">/**</span><br />
-                <span class="space" /><span class="comments">* Started from 2019-11-02</span><br />
-                <span class="space" /><span class="comments">*/</span><br />
+                <span class="comments">'''</span><br />
+                <span class="space" /><span class="comments">  Started from 2019-11-02</span><br />
+                <span class="space" /><span class="comments">'''</span><br />
 
                 <span class="keyword">class</span> Boy:<br />
                 <span class="space" /><span class="space" /><span class="keyword">def</span> __init__(self, name):<br />
                 <span class="space" /><span class="space" /><span class="space" /><span class="space" />self.name = name;<br />
-                <span class="space" /><span class="space" /><span class="keyword">def</span> loves(girlName):<br />
+                <span class="space" /><span class="space" /><span class="keyword">def</span> loves(self, girlName):<br />
                 <span class="space" /><span class="space" /><span class="space" /><span class="space" /><span class="keyword">print</span>(self.name + ' loves ' + girlName);<br />
                 <br />
                 <span class="keyword">class</span> Girl:<br />
                 <span class="space" /><span class="space" /><span class="keyword">def</span> __init__(self, name):<br />
                 <span class="space" /><span class="space" /><span class="space" /><span class="space" />self.name = name;<br />
-                <span class="space" /><span class="space" /><span class="keyword">def</span> misses(boyName):<br />
+                <span class="space" /><span class="space" /><span class="keyword">def</span> misses(self, boyName):<br />
                 <span class="space" /><span class="space" /><span class="space" /><span class="space" /><span class="keyword">print</span>(self.name + ' misses ' + boyName);<br />
                 <br />
                 boy = <span class="keyword">Boy</span>('Lee');<br />
                 girl = <span class="keyword">Girl</span>('Rainbow');<br />
                 <br />
-                <span class="comments">// print out Lee loves Rainbow </span><br />
+                <span class="comments"># print out Lee loves Rainbow </span><br />
                 boy.loves(girl.name);<br />
-                <span class="comments">// print out Rainbow misses Lee</span><br />
+                <span class="comments"># print out Rainbow misses Lee</span><br />
                 girl.misses(boy.name);<br />
 
             </div>
