@@ -1,3 +1,9 @@
+@media (max-width: 375px) {
+  #naruto-wrapper {
+    transform: scale(0.7);
+  }
+}
+
 #naruto-wrapper {
   position: absolute;
   bottom: 0;
