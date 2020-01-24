@@ -35,6 +35,7 @@
 
     <link href="css/default.css" type="text/css" rel="stylesheet">
     <link href="css/naruto.css" type="text/css" rel="stylesheet">
+    <link href="css/envelop.css" type="text/css" rel="stylesheet">
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/garden.js"></script>
     <script type="text/javascript" src="js/functions.js"></script>
@@ -42,81 +43,101 @@
 </head>
 
 <body>
-
-    <div id="mainDiv">
-        <div id="content">
-            <div id="code">
-                <span class="comments">'''</span><br />
-                <span class="space" /><span class="comments">  Started from 2019-11-02</span><br />
-                <span class="space" /><span class="comments">'''</span><br />
-
-                <span class="keyword">class</span> Boy:<br />
-                <span class="space" /><span class="space" /><span class="keyword">def</span> __init__(self, name):<br />
-                <span class="space" /><span class="space" /><span class="space" /><span class="space" />self.name = name;<br />
-                <span class="space" /><span class="space" /><span class="keyword">def</span> loves(self, girlName):<br />
-                <span class="space" /><span class="space" /><span class="space" /><span class="space" /><span class="keyword">print</span>(self.name + ' loves ' + girlName);<br />
-                <br />
-                <span class="keyword">class</span> Girl:<br />
-                <span class="space" /><span class="space" /><span class="keyword">def</span> __init__(self, name):<br />
-                <span class="space" /><span class="space" /><span class="space" /><span class="space" />self.name = name;<br />
-                <span class="space" /><span class="space" /><span class="keyword">def</span> misses(self, boyName):<br />
-                <span class="space" /><span class="space" /><span class="space" /><span class="space" /><span class="keyword">print</span>(self.name + ' misses ' + boyName);<br />
-                <br />
-                boy = <span class="keyword">Boy</span>('Lee');<br />
-                girl = <span class="keyword">Girl</span>('Rainbow');<br />
-                <br />
-                <span class="comments"># print out Lee loves Rainbow </span><br />
-                boy.loves(girl.name);<br />
-                <span class="comments"># print out Rainbow misses Lee</span><br />
-                girl.misses(boy.name);<br />
-
-            </div>
-            <div id="loveHeart">
-                <canvas id="garden"></canvas>
-                <div id="words">
-                    <div id="messages">
-                        寶寶，這是我們在一起的時光。
-                        <div id="elapseClock"></div>
+    <div class="section" id="envelop">
+        <div id="red-envelop">
+            <div class="hongbao">
+                <div class="topcontent">
+                    <div class="avatar">
+                        <img src="https://user-images.githubusercontent.com/43362704/73091694-4fe1fa80-3f1e-11ea-950e-60d0fac25392.jpg" alt="avatar" width="80" height="80" />
                     </div>
-                    <div id="loveu">
-                        愛你的豬<br/>
-                        <div class="signature">- Chen Li Zhan</div>
-                    </div>
+                    <h2>Lee Chen</h2>
+                    <span class="text">给你發了</span>
+                    <div class="description">鼠年行大運 多多指教</div>
+                </div>
+                <div id="chai">
+                    <span>發紅包</span>
                 </div>
             </div>
         </div>
     </div>
 
-    <div id="naruto-wrapper">
-      <div class="container">
-        <div class="naruto">
-          <div class="body"></div>
-          <div class="neck"></div>
-          <div class="face">
-            <div class="eyes"></div>
-            <div class="mouth"></div>
-            <div class="whiskers w1"></div>
-            <div class="whiskers w2"></div>
-            <div class="dimples"></div>
-          </div>
-          <div class="hair-base">
-            <div class="hair h1"></div>
-            <div class="hair h2"></div>
-            <div class="hair h3"></div>
-          </div>
-          <div class="headband">
-            <div class="plate"></div>
-          </div>
-          <div class="noodleLive"></div>
-          <div class="chopsticks"></div>
-          <div class="hand left"></div>
-          <div class="hand right"></div>
+    <div class="section" id="main">
+        <div id="mainDiv">
+            <div id="content">
+                <div id="code">
+                    <span class="comments">'''</span><br />
+                    <span class="space" /><span class="comments">  Started from 2019-11-02</span><br />
+                    <span class="space" /><span class="comments">'''</span><br />
+    
+                    <span class="keyword">class</span> Boy:<br />
+                    <span class="space" /><span class="space" /><span class="keyword">def</span> __init__(self, name):<br />
+                    <span class="space" /><span class="space" /><span class="space" /><span class="space" />self.name = name;<br />
+                    <span class="space" /><span class="space" /><span class="keyword">def</span> loves(self, girlName):<br />
+                    <span class="space" /><span class="space" /><span class="space" /><span class="space" /><span class="keyword">print</span>(self.name + ' loves ' + girlName);<br />
+                    <br />
+                    <span class="keyword">class</span> Girl:<br />
+                    <span class="space" /><span class="space" /><span class="keyword">def</span> __init__(self, name):<br />
+                    <span class="space" /><span class="space" /><span class="space" /><span class="space" />self.name = name;<br />
+                    <span class="space" /><span class="space" /><span class="keyword">def</span> misses(self, boyName):<br />
+                    <span class="space" /><span class="space" /><span class="space" /><span class="space" /><span class="keyword">print</span>(self.name + ' misses ' + boyName);<br />
+                    <br />
+                    boy = <span class="keyword">Boy</span>('Lee');<br />
+                    girl = <span class="keyword">Girl</span>('Rainbow');<br />
+                    <br />
+                    <span class="comments"># print out Lee loves Rainbow </span><br />
+                    boy.loves(girl.name);<br />
+                    <span class="comments"># print out Rainbow misses Lee</span><br />
+                    girl.misses(boy.name);<br />
+    
+                </div>
+                <div id="loveHeart">
+                    <canvas id="garden"></canvas>
+                    <div id="words">
+                        <div id="messages">
+                            寶寶，這是我們在一起的時光。
+                            <div id="elapseClock"></div>
+                        </div>
+                        <div id="loveu">
+                            愛你的豬<br/>
+                            <div class="signature">- Chen Li Zhan</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-  
-      <div class="bowl"></div>
-      <div class="love"></div>
+
+        <div id="naruto-wrapper">
+          <div class="container">
+            <div class="naruto">
+              <div class="body"></div>
+              <div class="neck"></div>
+              <div class="face">
+                <div class="eyes"></div>
+                <div class="mouth"></div>
+                <div class="whiskers w1"></div>
+                <div class="whiskers w2"></div>
+                <div class="dimples"></div>
+              </div>
+              <div class="hair-base">
+                <div class="hair h1"></div>
+                <div class="hair h2"></div>
+                <div class="hair h3"></div>
+              </div>
+              <div class="headband">
+                <div class="plate"></div>
+              </div>
+              <div class="noodleLive"></div>
+              <div class="chopsticks"></div>
+              <div class="hand left"></div>
+              <div class="hand right"></div>
+            </div>
+          </div>
+      
+          <div class="bowl"></div>
+          <div class="love"></div>
+        </div>
     </div>
+
 
     <script type="text/javascript">
         var offsetX = $("#loveHeart").width() / 2;
@@ -152,4 +173,5 @@
     </script>
 </body>
 
+<script type="text/javascript" src="js/envelop.js"></script>
 </html>
